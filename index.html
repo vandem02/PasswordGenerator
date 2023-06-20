@@ -3,12 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Password Generator</title>
 </head>
 <body>
     <h1>Password Generator</h1>
     <form>
-        
+        <label for="length">Length:</label>
+        <input type="number" id="length" name="length" value="8" min="8" max="128"><br>
+        <input type="checkbox" id="lowercase" name="lowercase" checked>
+        <label for="lowercase">Include lowercase characters</label><br>
+        <input type="checkbox" id="uppercase" name="uppercase" checked>
+        <label for="uppercase">Include uppercase characters</label><br>
+        <input type="checkbox" id="numeric" name="numeric" checked>
+        <label for="numeric">Include numbers</label><br>
+        <input type="checkbox" id="special" name="special" checked>
+        <label for="special">Include special characters</label><br>
+        <button>Generate</button>
     </form>
 </body>
 </html>
