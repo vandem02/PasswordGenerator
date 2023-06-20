@@ -3,5 +3,6 @@ form > * {
 }
 
 #errorElement {
+    display: none;
     color: red;
 }
