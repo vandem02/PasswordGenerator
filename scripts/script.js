@@ -9,7 +9,7 @@ const errorElement = document.getElementById('errorElement')
 var lowercaseChars = "abcdefghijklmnopqrstuvwxyz"
 var uppercaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 var numericChars = "0123456789"
-var specialChars = "!?@#$%^&*"
+var specialChars = "!?@#$%&*"
 
 function createPassword() {
     

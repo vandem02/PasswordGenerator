@@ -1,5 +1,25 @@
+body {
+    font-family: 'Solway', serif;
+    background-image: linear-gradient(to right, blue , orange)
+}
+
+#content {
+    height: 300px;
+    width: 400px;
+    margin: 190px auto 0 auto;
+    text-align: center;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+form {
+    width: 90%;
+    margin: auto;
+}
+
 form > * {
-    margin: 5px 0;
+    margin: 5px auto;
 }
 
 #errorElement {

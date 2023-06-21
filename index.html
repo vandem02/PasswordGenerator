@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Solway&display=swap" rel="stylesheet">
     <script defer src="scripts/script.js"></script> <!-- "defer" means page loads first -->
     <title>Password Generator</title>
-</head>
-<body>
-    <h1>Password Generator</h1>
-    <form id="form">
+  </head>
+  <body>
+    <div id="content">
+      <h1>Password Generator</h1>
+      <form id="form">
         <label for="length">Length:</label>
-        <input type="number" id="length" name="length" value="8" min="8" max="128" required><br>
+        <input type="number" id="length" name="length" value="8" min="8" max="128" required /><br />
         <div id="errorElement">Please select at least one option.</div>
-        <input type="checkbox" id="lowercase" name="lowercase" checked>
-        <label for="lowercase">Include lowercase characters</label><br>
-        <input type="checkbox" id="uppercase" name="uppercase" checked>
-        <label for="uppercase">Include uppercase characters</label><br>
-        <input type="checkbox" id="numeric" name="numeric" checked>
-        <label for="numeric">Include numbers</label><br>
-        <input type="checkbox" id="special" name="special" checked>
-        <label for="special">Include special characters</label><br>
+        <input type="checkbox" id="lowercase" name="lowercase" checked />
+        <label for="lowercase">Include lowercase characters</label><br />
+        <input type="checkbox" id="uppercase" name="uppercase" checked />
+        <label for="uppercase">Include uppercase characters</label><br />
+        <input type="checkbox" id="numeric" name="numeric" checked />
+        <label for="numeric">Include numbers</label><br />
+        <input type="checkbox" id="special" name="special" checked />
+        <label for="special">Include special characters</label><br />
         <button>Generate</button>
-    </form>
-</body>
+      </form>
+    </div>
+  </body>
 </html>
